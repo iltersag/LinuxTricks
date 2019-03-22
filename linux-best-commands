@@ -1,0 +1,2 @@
+Klasördeki toplam sizelar
+du -sh *
