@@ -1,2 +1,5 @@
 Klasördeki toplam sizelar
 du -sh *
+
+Silinmiş olmasına rağmen process reload olmadığı için askıda kalan dosyalar
+lsof +L1
