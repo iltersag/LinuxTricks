@@ -29,3 +29,5 @@ WantedBy=multi-user.target
 sudo systemctl enable kestrel-helloapp.service
 sudo systemctl start kestrel-helloapp.service
 sudo systemctl status kestrel-helloapp.service
+
+ iptables -A INPUT -p tcp --dport 5011 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
