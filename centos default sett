@@ -1,0 +1,8 @@
+centos default setting
+mv -f /etc/localtime /etc/localtime.bak
+ln -sf /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
+#disable firewall
+systemctl disable firewalld
+systemctl stop firewalld
+sestatus
+vi  /etc/selinux/config
