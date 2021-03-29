@@ -1,9 +1,17 @@
 Klasördeki toplam sizelar
 du -sh *
 
+klasör bazında size
+du -x   -d1 -h /
+
 Silinmiş olmasına rağmen process reload olmadığı için askıda kalan dosyalar
 lsof +L1
 
 
 açık portlar
 lsof -Pnl +M -i4
+
+
+silinmiş dosyalar listesi
+
+lsof -s | grep deleted | sort -k 8
