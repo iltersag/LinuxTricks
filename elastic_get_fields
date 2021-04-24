@@ -1,0 +1,11 @@
+GET application-2021.04.21/_search
+{
+  "_source": ["object.ExtraData.Entity.filterModel"],
+    "from": 0,
+  "size": 500,
+  "query": {
+    "match": {
+      "object.ApplicationName": "sevice"
+    }
+  }
+}
