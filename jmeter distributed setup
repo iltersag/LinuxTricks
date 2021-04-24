@@ -1,0 +1,18 @@
+for remote testing
+
+./apache-jmeter-5.4.1/bin/jmeter.sh -n -t test.jmx -l result.txt -e -o test_result -r
+
+jmeter.properties 
+
+remote_hosts=10.1.7.62:1099
+
+client.rmi.localport=4000
+
+server.rmi.ssl.disable=true
+
+jmeter.sh
+
+JVM_ARGS="-Xms1024m -Xmx1024m"
+
+to see the results on remote server
+python -m SimpleHTTPServer 8080
