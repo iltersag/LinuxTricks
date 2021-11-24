@@ -3,3 +3,5 @@
 http://<host>:9200/_nodes/stats?metric=adaptive_selection,breaker,discovery,fs,http,indices,jvm,os,process,thread_pool,transport
 
 http://<host>:9200/_cluster/settings?pretty&include_defaults
+
+http://<host>:9200/_cat/thread_pool/?v&h=id,name,active,rejected,completed,size,type&pretty
