@@ -5,3 +5,9 @@ http://<host>:9200/_nodes/stats?metric=adaptive_selection,breaker,discovery,fs,h
 http://<host>:9200/_cluster/settings?pretty&include_defaults
 
 http://<host>:9200/_cat/thread_pool/?v&h=id,name,active,rejected,completed,size,type&pretty
+
+http://<host>:9200/_nodes/hot_threads
+
+http://<host>:9200/_cat/tasks?detailed&pretty
+
+http://10.1.9.195:9200/_nodes/stats/indices/request_cache?human
