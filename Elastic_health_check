@@ -10,4 +10,6 @@ http://<host>:9200/_nodes/hot_threads
 
 http://<host>:9200/_cat/tasks?detailed&pretty
 
-http://10.1.9.195:9200/_nodes/stats/indices/request_cache?human
+http://<host>:9200/_nodes/stats/indices/request_cache?human
+
+http://<host>:9200/_nodes/stats/indices/query_cache?human
