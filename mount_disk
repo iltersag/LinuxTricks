@@ -1,0 +1,30 @@
+#Use the lsblk -f command to get information about all of the devices attached to the instance.
+
+sudo lsblk -f
+
+#create filesystem if needed
+
+sudo mkfs -t xfs /dev/xvdf
+
+sudo mkdir /data
+
+sudo mount /dev/xvdf /data
+
+#for instant mount
+sudo mount /dev/xvdf /data
+
+#for automatic mount after reboot
+sudo cp /etc/fstab /etc/fstab.orig
+
+# get new dev UUID
+sudo lsblk -o +UUID
+
+# edit fstab
+sudo vim /etc/fstab
+
+#uuid line to add
+UUID=aebf131c-6957-451e-8d34-ec978d9581ae  /data  xfs  defaults,nofail  0  2
+
+#mount auto settings in fstab
+sudo mount -a
+
