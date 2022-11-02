@@ -15,3 +15,6 @@ lsof -Pnl +M -i4
 silinmiş dosyalar listesi
 
 lsof -s | grep deleted | sort -k 8
+
+TCP dump almaca
+tcpdump -vv -i any port 80 -tttt -A -c 5
