@@ -18,3 +18,7 @@ lsof -s | grep deleted | sort -k 8
 
 TCP dump almaca
 tcpdump -vv -i any port 80 -tttt -A -c 5
+
+
+TCP bir portun istek attığı url görmece
+tcpflow -p -c -i eno1 port 80 | grep -oE '(GET|POST|HEAD) .* HTTP/1.[01]|Host: .*'
