@@ -25,3 +25,6 @@ tcpflow -p -c -i eno1 port 80 | grep -oE '(GET|POST|HEAD) .* HTTP/1.[01]|Host: .
 
 içinde bulunan klasördekilerin boyutlarını listeler
 du -cksh *
+
+sıralı olarak
+ du -cksh * | sort -h
