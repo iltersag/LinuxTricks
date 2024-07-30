@@ -28,3 +28,6 @@ du -cksh *
 
 sıralı olarak
  du -cksh * | sort -h
+
+add ssh key to server
+https://www.fis.gatech.edu/how-to-add-linux-ssh-key-user/
