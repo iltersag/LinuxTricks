@@ -31,3 +31,6 @@ sıralı olarak
 
 add ssh key to server
 https://www.fis.gatech.edu/how-to-add-linux-ssh-key-user/
+
+bash timeout change
+exec env TMOUT=0 bash    
